@@ -36,27 +36,31 @@ export default function Header() {
           <Code className="h-7 w-7 text-primary" />
           <span>CodeCanvas</span>
         </Link>
-
-        <nav className="hidden items-center gap-6 md:flex">
+        
+        <nav className="hidden md:flex items-center gap-2 p-2 rounded-full border bg-background/50">
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="text-lg font-medium text-foreground/80 transition-colors hover:text-foreground">
-              {link.label}
-            </Link>
+            <Button key={link.href} asChild variant="ghost" className="rounded-full">
+              <Link href={link.href} className="text-foreground/80 transition-colors hover:text-foreground">
+                {link.label}
+              </Link>
+            </Button>
           ))}
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" asChild>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <Github className="h-6 w-6" />
-            </a>
-          </Button>
-          <Button variant="ghost" size="icon" asChild>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <Linkedin className="h-6 w-6" />
-            </a>
-          </Button>
-          <ThemeToggle />
+          <div className="hidden md:flex items-center gap-2">
+            <Button variant="ghost" size="icon" asChild>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <Github className="h-6 w-6" />
+              </a>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <Linkedin className="h-6 w-6" />
+              </a>
+            </Button>
+            <ThemeToggle />
+          </div>
 
           <div className="md:hidden">
             <Sheet>
@@ -77,6 +81,19 @@ export default function Header() {
                       {link.label}
                     </Link>
                   ))}
+                  <div className="flex items-center gap-2 pt-4 border-t">
+                    <Button variant="ghost" size="icon" asChild>
+                      <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <Github className="h-6 w-6" />
+                      </a>
+                    </Button>
+                    <Button variant="ghost" size="icon" asChild>
+                      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <Linkedin className="h-6 w-6" />
+                      </a>
+                    </Button>
+                    <ThemeToggle />
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>
