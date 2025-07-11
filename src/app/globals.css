@@ -98,8 +98,11 @@
 
   /* Say Hello / Download Button */
   .animated-button {
-    @apply text-lg text-primary-foreground font-sans py-2 px-4 flex items-center justify-center border-none rounded-full shadow-lg transition-all duration-300;
+    @apply font-sans py-2 px-4 flex items-center justify-center border-none rounded-full shadow-lg transition-all duration-300;
     background: linear-gradient(to bottom, hsl(var(--accent)), hsl(var(--primary)));
+    color: hsl(var(--primary-foreground));
+    font-size: 17px;
+    font-weight: 600;
   }
 
   .animated-button:hover {
@@ -122,7 +125,8 @@
   }
   
   .animated-button .svg-wrapper svg {
-    @apply w-[18px] h-[18px] fill-primary-foreground transition-all duration-300;
+    @apply w-[18px] h-[18px] transition-all duration-300;
+    fill: hsl(var(--primary-foreground));
   }
 
   .animated-button:hover .svg-wrapper svg.send-icon {
@@ -146,17 +150,6 @@
     100% {
       transform: translateY(0px);
     }
-  }
-
-  .animated-button:hover .svg-wrapper svg.eye-icon {
-    animation: eye_glance 1.5s infinite;
-  }
-
-  @keyframes eye_glance {
-    0%, 100% { transform: translateX(0) scaleX(1); }
-    10%, 20% { transform: translateX(-5px) scaleX(0.9); }
-    30%, 40% { transform: translateX(5px) scaleX(0.9); }
-    50% { transform: translateX(0) scaleX(1); }
   }
 
 }

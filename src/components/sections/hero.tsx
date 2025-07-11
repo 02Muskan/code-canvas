@@ -1,5 +1,6 @@
 import Image from "next/image"
 import AnimatedButton from "../animated-button"
+import { Button } from "../ui/button"
 
 export default function Hero() {
   return (
@@ -14,9 +15,11 @@ export default function Hero() {
             A passionate Frontend Developer crafting beautiful and functional web experiences. Welcome to my creative canvas.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <AnimatedButton href="#projects" iconType="eye">
-                View My Work
-            </AnimatedButton>
+            <Button asChild size="lg" className="text-lg">
+                <a href="#projects">
+                    View My Work
+                </a>
+            </Button>
             <AnimatedButton href="/resume.pdf" iconType="download" download>
                 Download Resume
             </AnimatedButton>
