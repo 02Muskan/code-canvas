@@ -32,15 +32,15 @@ export default function Hero() {
                 className="object-contain rounded-full"
                 data-ai-hint="illustrative developer avatar"
             />
+            <div className="absolute right-0 bottom-1/4 flex flex-col items-center gap-4 z-20">
+              <a href="https://github.com/02Muskan" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-background/50 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground transition-all duration-300 transform hover:scale-110">
+                <Github className="h-6 w-6" />
+              </a>
+              <a href="https://www.linkedin.com/in/-muskan-agarwal/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-background/50 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground transition-all duration-300 transform hover:scale-110">
+                <Linkedin className="h-6 w-6" />
+              </a>
+            </div>
         </div>
-      </div>
-      <div className="absolute right-4 md:right-8 bottom-8 flex flex-col items-center gap-4 z-20">
-        <a href="https://github.com/02Muskan" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors">
-          <Github className="h-8 w-8" />
-        </a>
-        <a href="https://www.linkedin.com/in/-muskan-agarwal/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors">
-          <Linkedin className="h-8 w-8" />
-        </a>
       </div>
     </section>
   )
