@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link"
-import { Github, Linkedin, Menu } from "lucide-react"
+import { Menu } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -48,16 +48,6 @@ export default function Header() {
 
         <div className="flex items-center gap-2">
           <div className="hidden md:flex items-center gap-2">
-            <Button variant="ghost" size="icon" asChild>
-              <a href="https://github.com/02Muskan" target="_blank" rel="noopener noreferrer" aria-label="Muskan Agarwal's GitHub">
-                <Github className="h-6 w-6" />
-              </a>
-            </Button>
-            <Button variant="ghost" size="icon" asChild>
-              <a href="https://www.linkedin.com/in/-muskan-agarwal/" target="_blank" rel="noopener noreferrer" aria-label="Muskan Agarwal's LinkedIn">
-                <Linkedin className="h-6 w-6" />
-              </a>
-            </Button>
             <ThemeToggle />
           </div>
 
@@ -80,16 +70,6 @@ export default function Header() {
                     </Link>
                   ))}
                   <div className="flex items-center gap-2 pt-4 border-t">
-                    <Button variant="ghost" size="icon" asChild>
-                      <a href="https://github.com/02Muskan" target="_blank" rel="noopener noreferrer" aria-label="Muskan Agarwal's GitHub">
-                        <Github className="h-6 w-6" />
-                      </a>
-                    </Button>
-                    <Button variant="ghost" size="icon" asChild>
-                      <a href="https://www.linkedin.com/in/-muskan-agarwal/" target="_blank" rel="noopener noreferrer" aria-label="Muskan Agarwal's LinkedIn">
-                        <Linkedin className="h-6 w-6" />
-                      </a>
-                    </Button>
                     <ThemeToggle />
                   </div>
                 </div>

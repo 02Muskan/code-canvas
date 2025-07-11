@@ -1,5 +1,6 @@
 import Image from "next/image"
 import AnimatedButton from "../animated-button"
+import { Github, Linkedin } from "lucide-react"
 
 export default function Hero() {
   return (
@@ -18,7 +19,7 @@ export default function Hero() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
                 <span>View My Work</span>
               </a>
-              <AnimatedButton href="/Muskan_Agarwal_Resume.pdf" iconType="download" download>
+              <AnimatedButton href="/Muskan_Agarwal_Resume.pdf" iconType="download">
                   Download Resume
               </AnimatedButton>
             </div>
@@ -32,6 +33,14 @@ export default function Hero() {
                 data-ai-hint="illustrative developer avatar"
             />
         </div>
+      </div>
+      <div className="absolute right-4 md:right-8 bottom-8 flex flex-col items-center gap-4 z-20">
+        <a href="https://github.com/02Muskan" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors">
+          <Github className="h-8 w-8" />
+        </a>
+        <a href="https://www.linkedin.com/in/-muskan-agarwal/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors">
+          <Linkedin className="h-8 w-8" />
+        </a>
       </div>
     </section>
   )

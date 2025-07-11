@@ -1,5 +1,6 @@
 "use client"
 
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { useState } from 'react'
 import Image from "next/image"
 import { projects } from "@/lib/data.tsx"
@@ -13,7 +14,7 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
 
   return (
     <div 
-      className="group w-full h-80 [perspective:1000px]"
+      className="group w-full h-72 [perspective:1000px]"
       onClick={() => setIsFlipped(!isFlipped)}
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}
