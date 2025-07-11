@@ -10,7 +10,7 @@ export default function Contact() {
           I'm currently open to new opportunities. Feel free to reach out if you have a project in mind or just want to connect!
         </p>
         <div className="mt-8 flex justify-center">
-          <AnimatedButton href="mailto:agarwalmuskan042@gmail.com" iconType="send">
+          <AnimatedButton href="mailto:agarwalmuskan052@gmail.com" iconType="send">
               Say Hello
           </AnimatedButton>
         </div>

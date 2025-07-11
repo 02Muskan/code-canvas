@@ -32,7 +32,14 @@ export default function Header() {
       scrolled ? "bg-background/80 backdrop-blur-sm border-b" : "bg-transparent"
     )}>
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2 font-headline text-2xl font-bold">
+        <Link href="images/portfolio icon.png" className="flex items-center gap-2 font-headline text-2xl font-bold">
+        <img
+          src="/images/portfolio icon.png"
+          alt="Logo"
+          width={32}
+          height={32}
+          className="object-contain"
+        />
           <span>CodeCanvas</span>
         </Link>
         

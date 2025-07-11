@@ -12,7 +12,7 @@ export default function Hero() {
             Muskan Agarwal
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-foreground/80 md:text-xl lg:text-2xl">
-            A passionate Frontend Developer crafting beautiful and functional web experiences. Welcome to my creative canvas.
+            Crafting responsive, functional UIs with clean code, dynamic integrations, and performance-driven design.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a href="#projects" className="fill-button">

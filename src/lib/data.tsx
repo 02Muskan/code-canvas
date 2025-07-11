@@ -108,6 +108,15 @@ export const projects = [
     live: "https://code-sync-eight-tau.vercel.app/",
   },
   {
+    title: "CodeCanvas(Portfolio)",
+    description: "A real-time code collaboration platform featuring shared editing, syntax highlighting, and live updates.",
+    tags: ["React.js", "Socket.io", "Express.js", "Docker"],
+    image: "/images/portfolio.png",
+    aiHint: "code editor",
+    github: "https://github.com/02Muskan",
+    live: "hhttps://muskanagarwal.vercel.app/",
+  },
+  {
     title: "LearnEd",
     description: "A user-friendly e-learning platform providing digital access to a wide range of courses and educational resources.",
     tags: ["HTML", "CSS", "JavaScript"],
