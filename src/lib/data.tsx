@@ -82,7 +82,7 @@ export const projects = [
     tags: ["Next.js", "React.js", "Tailwind CSS", "Node.js"],
     image: "https://placehold.co/600x400.png",
     aiHint: "web component",
-    github: "https://github.com",
+    github: "https://github.com/02Muskan",
     live: "https://example.com",
   },
   {
@@ -91,7 +91,7 @@ export const projects = [
     tags: ["React.js", "Socket.io", "Express.js", "Docker"],
     image: "https://placehold.co/600x400.png",
     aiHint: "code editor",
-    github: "https://github.com",
+    github: "https://github.com/02Muskan",
     live: "https://example.com",
   },
   {
@@ -100,7 +100,7 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     image: "https://placehold.co/600x400.png",
     aiHint: "online learning",
-    github: "https://github.com",
+    github: "https://github.com/02Muskan",
     live: "https://example.com",
   },
   {
@@ -109,7 +109,7 @@ export const projects = [
     tags: ["JavaScript", "Chrome API", "NLP"],
     image: "https://placehold.co/600x400.png",
     aiHint: "browser extension",
-    github: "https://github.com",
+    github: "https://github.com/02Muskan",
     live: "https://example.com",
   },
   {
@@ -118,7 +118,7 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     image: "https://placehold.co/600x400.png",
     aiHint: "watch store",
-    github: "https://github.com",
+    github: "https://github.com/02Muskan",
     live: "https://example.com",
   },
   {
@@ -127,7 +127,7 @@ export const projects = [
     tags: ["React.js", "JavaScript"],
     image: "https://placehold.co/600x400.png",
     aiHint: "to-do list",
-    github: "https://github.com",
+    github: "https://github.com/02Muskan",
     live: "https://example.com",
   },
   {
@@ -136,7 +136,7 @@ export const projects = [
     tags: ["HTML", "CSS", "Bootstrap"],
     image: "https://placehold.co/600x400.png",
     aiHint: "travel website",
-    github: "https://github.com",
+    github: "https://github.com/02Muskan",
     live: "https://example.com",
   },
   {
@@ -145,7 +145,7 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     image: "https://placehold.co/600x400.png",
     aiHint: "security tool",
-    github: "https://github.com",
+    github: "https://github.com/02Muskan",
     live: "https://example.com",
   },
 ]

@@ -1,8 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { developmentSkills, deploymentSkills } from "@/lib/data.tsx"
 
-const aboutMeText = "🚀 Frontend Developer with 2+ years of building fast ⚡, clean 🧼, and beautiful 🎨 web apps using React, Next.js, and Tailwind CSS. I turn 🎯 Figma designs into pixel-perfect UIs and love crafting components that are both reusable ♻️ and delightful ✨. 🏢 Currently at Miles Education, shaping a powerful CRM from the ground up — building dynamic UIs 💻, integrating real-time APIs 🔄, and making dashboards 📊 that actually work (and look great doing it 😎). 🧰 Stack: React ⚛️, Next.js 🚦, TypeScript 🟦, Tailwind 💅, Zustand 🧠, Node.js 🌐 ⚡️ Superpowers: Clean code ✍️, snappy UI 🎯, smooth API integration 🔌, and design that just feels right 🎯"
-
 export default function About() {
   return (
     <section id="about" className="container mx-auto py-16 md:py-24 px-4 md:px-6">
@@ -11,7 +9,14 @@ export default function About() {
           <h2 className="font-headline text-4xl font-bold text-center">About Me</h2>
           <div className="space-y-4 text-lg text-foreground/80 max-w-3xl mx-auto text-center">
             <p>
-              {aboutMeText}
+              🚀 Frontend Developer with 2+ years of building fast ⚡, clean 🧼, and beautiful 🎨 web apps using React, Next.js, and Tailwind CSS. I turn 🎯 Figma designs into pixel-perfect UIs and love crafting components that are both reusable ♻️ and delightful ✨.
+            </p>
+            <p>
+              🏢 Currently at Miles Education, shaping a powerful CRM from the ground up — building dynamic UIs 💻, integrating real-time APIs 🔄, and making dashboards 📊 that actually work (and look great doing it 😎).
+            </p>
+            <p>
+              🧰 Stack: React ⚛️, Next.js 🚦, TypeScript 🟦, Tailwind 💅, Zustand 🧠, Node.js 🌐 <br/>
+              ⚡️ Superpowers: Clean code ✍️, snappy UI 🎯, smooth API integration 🔌, and design that just feels right 🎯
             </p>
           </div>
         </div>

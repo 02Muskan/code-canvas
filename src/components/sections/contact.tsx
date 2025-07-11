@@ -15,7 +15,7 @@ export default function Contact() {
           </AnimatedButton>
         </div>
         <div className="mt-12 flex justify-center gap-6">
-          <a href="https://github.com/muskan-agarwal" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-primary">
+          <a href="https://github.com/02Muskan" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-primary">
             <Github className="h-8 w-8" />
             <span className="sr-only">GitHub</span>
           </a>
