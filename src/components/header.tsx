@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link"
-import { Github, Linkedin, Menu, Code } from "lucide-react"
+import { Github, Linkedin, Menu } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -33,7 +33,6 @@ export default function Header() {
     )}>
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 font-headline text-2xl font-bold">
-          <Code className="h-7 w-7 text-primary" />
           <span>CodeCanvas</span>
         </Link>
         
@@ -73,7 +72,6 @@ export default function Header() {
               <SheetContent side="right">
                 <div className="grid gap-4 py-6">
                   <Link href="/" className="flex items-center gap-2 font-headline text-2xl font-bold">
-                     <Code className="h-7 w-7 text-primary" />
                     <span>CodeCanvas</span>
                   </Link>
                    {navLinks.map((link) => (
