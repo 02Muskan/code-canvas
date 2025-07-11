@@ -1,4 +1,3 @@
-import { Eye } from "lucide-react"
 import Image from "next/image"
 import AnimatedButton from "../animated-button"
 
