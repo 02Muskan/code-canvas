@@ -42,31 +42,36 @@ const GitLogo = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-const FigmaLogo = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M15.666 12.333a2.333 2.333 0 11-4.666 0 2.333 2.333 0 014.666 0z" fill="#F24E1E"/>
-    <path d="M8.667 12.333a2.333 2.333 0 11-4.667 0 2.333 2.333 0 014.667 0z" fill="#FF7262"/>
-    <path d="M4 16.833a2.333 2.333 0 114.667 0 2.333 2.333 0 01-4.667 0z" fill="#A259FF"/>
-    <path d="M8.667 7.833a2.333 2.333 0 11-4.667 0 2.333 2.333 0 014.667 0z" fill="#1ABCFE"/>
-    <path d="M13.333 7.833a2.333 2.333 0 114.667 0v4.5h-2.334a2.333 2.333 0 01-2.333-2.333v-2.167z" fill="#0ACF83"/>
-  </svg>
-);
-
 const VercelLogo = (props: React.SVGProps<SVGSVGElement>) => (
   <svg {...props} fill="#000" viewBox="0 0 256 222"><path d="m128 0 128 221.705H0z"/></svg>
 );
+
+const NodeJsLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.773 13.142l-2.022-1.167L5.006 14.84V9.16l4.745-2.74L14.496 9.16v5.68l-2.723-1.698zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm7.902 14.938l-2.47-1.426v-2.85l2.47-1.425 2.47 1.425v2.85l-2.47 1.426zm-3.805-2.196l-2.099-1.211-2.099 1.211V13.53l2.099 1.211 2.099-1.211v1.212zm-8.195 0l-2.47-1.426v-2.85l2.47-1.425 2.47 1.425v2.85l-2.47 1.426z" fill="#339933"/>
+  </svg>
+);
+
+const ZustandLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M62 106C86.303 106 106 86.303 106 62C106 37.697 86.303 18 62 18C37.697 18 18 37.697 18 62C18 86.303 37.697 106 62 106Z" fill="#FFA6C2"/>
+    <path d="M62 124C95.137 124 122 97.137 122 64C122 30.863 95.137 4 62 4C28.863 4 2 30.863 2 64C2 97.137 28.863 124 62 124ZM62 118C91.941 118 116 93.941 116 64C116 34.059 91.941 10 62 10C32.059 10 8 34.059 8 64C8 93.941 32.059 118 62 118Z" fill="#333333"/>
+  </svg>
+);
+
 
 export const developmentSkills = [
   { name: "React", logo: ReactLogo },
   { name: "Next.js", logo: NextJsLogo },
   { name: "TypeScript", logo: TypeScriptLogo },
   { name: "Tailwind CSS", logo: TailwindCssLogo },
+  { name: "Node.js", logo: NodeJsLogo },
+  { name: "Zustand", logo: ZustandLogo },
 ];
 
 export const deploymentSkills = [
   { name: "Vercel", logo: VercelLogo },
   { name: "Git", logo: GitLogo },
-  { name: "Figma", logo: FigmaLogo },
 ];
 
 // A list of your projects

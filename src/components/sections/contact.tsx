@@ -10,16 +10,16 @@ export default function Contact() {
           I'm currently open to new opportunities. Feel free to reach out if you have a project in mind or just want to connect!
         </p>
         <div className="mt-8 flex justify-center">
-          <AnimatedButton href="mailto:hello@example.com" iconType="send">
+          <AnimatedButton href="mailto:agarwalmuskan042@gmail.com" iconType="send">
               Say Hello
           </AnimatedButton>
         </div>
         <div className="mt-12 flex justify-center gap-6">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-primary">
+          <a href="https://github.com/muskan-agarwal" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-primary">
             <Github className="h-8 w-8" />
             <span className="sr-only">GitHub</span>
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-primary">
+          <a href="https://www.linkedin.com/in/-muskan-agarwal/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-primary">
             <Linkedin className="h-8 w-8" />
             <span className="sr-only">LinkedIn</span>
           </a>

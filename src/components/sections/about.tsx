@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { developmentSkills, deploymentSkills } from "@/lib/data.tsx"
 
-const aboutMeText = "From my first 'Hello World' to architecting complex, responsive web applications, my journey in frontend development has been one of perpetual learning and passion. I thrive on turning intricate problems into elegant, user-friendly interfaces. My expertise lies in the React ecosystem, but I'm always eager to explore new technologies to find the best tool for the job. When I'm not coding, you can find me exploring hiking trails or experimenting with new recipes."
+const aboutMeText = "🚀 Frontend Developer with 2+ years of building fast ⚡, clean 🧼, and beautiful 🎨 web apps using React, Next.js, and Tailwind CSS. I turn 🎯 Figma designs into pixel-perfect UIs and love crafting components that are both reusable ♻️ and delightful ✨. 🏢 Currently at Miles Education, shaping a powerful CRM from the ground up — building dynamic UIs 💻, integrating real-time APIs 🔄, and making dashboards 📊 that actually work (and look great doing it 😎). 🧰 Stack: React ⚛️, Next.js 🚦, TypeScript 🟦, Tailwind 💅, Zustand 🧠, Node.js 🌐 ⚡️ Superpowers: Clean code ✍️, snappy UI 🎯, smooth API integration 🔌, and design that just feels right 🎯"
 
 export default function About() {
   return (
@@ -35,7 +35,7 @@ export default function About() {
           
           <Card className="bg-card/80">
             <CardHeader>
-              <CardTitle className="font-headline text-2xl text-center">Deployment & More</CardTitle>
+              <CardTitle className="font-headline text-2xl text-center">Build & Deployment</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap justify-center gap-6">

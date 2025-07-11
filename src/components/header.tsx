@@ -49,12 +49,12 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <div className="hidden md:flex items-center gap-2">
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/muskan-agarwal" target="_blank" rel="noopener noreferrer" aria-label="Muskan Agarwal's GitHub">
                 <Github className="h-6 w-6" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/-muskan-agarwal/" target="_blank" rel="noopener noreferrer" aria-label="Muskan Agarwal's LinkedIn">
                 <Linkedin className="h-6 w-6" />
               </a>
             </Button>
@@ -81,12 +81,12 @@ export default function Header() {
                   ))}
                   <div className="flex items-center gap-2 pt-4 border-t">
                     <Button variant="ghost" size="icon" asChild>
-                      <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                      <a href="https://github.com/muskan-agarwal" target="_blank" rel="noopener noreferrer" aria-label="Muskan Agarwal's GitHub">
                         <Github className="h-6 w-6" />
                       </a>
                     </Button>
                     <Button variant="ghost" size="icon" asChild>
-                      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                      <a href="https://www.linkedin.com/in/-muskan-agarwal/" target="_blank" rel="noopener noreferrer" aria-label="Muskan Agarwal's LinkedIn">
                         <Linkedin className="h-6 w-6" />
                       </a>
                     </Button>
