@@ -95,4 +95,36 @@
       background-position: 0% 50%;
     }
   }
+
+  .animated-button {
+    @apply text-lg text-white font-sans py-3 px-5 flex items-center justify-center border-none rounded-full shadow-lg transition-all duration-300;
+    background: linear-gradient(to bottom, #4dc7d9 0%, #66a6ff 100%);
+  }
+
+  .animated-button:hover {
+    @apply -translate-y-1;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .animated-button:active {
+    @apply scale-95;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .animated-button .svg-wrapper {
+    @apply flex items-center justify-center w-[30px] h-[30px] rounded-full mr-2 transition-all duration-300;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .animated-button:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .animated-button:hover .svg-wrapper svg {
+    @apply rotate-45;
+  }
+
+  .animated-button .svg-wrapper svg {
+    @apply w-[18px] h-[18px] fill-white transition-all duration-300;
+  }
 }

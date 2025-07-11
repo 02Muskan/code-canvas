@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Download, Eye } from "lucide-react"
 import Image from "next/image"
+import AnimatedButton from "../animated-button"
 
 export default function Hero() {
   return (
@@ -21,12 +22,9 @@ export default function Hero() {
                 View My Work
                 </a>
             </Button>
-            <Button size="lg" variant="secondary" asChild>
-                <a href="/resume.pdf" download>
-                <Download className="mr-2 h-5 w-5" />
+            <AnimatedButton href="/resume.pdf" icon={<Download />} download>
                 Download Resume
-                </a>
-            </Button>
+            </AnimatedButton>
             </div>
         </div>
         <div className="relative w-full max-w-sm mx-auto md:max-w-md lg:max-w-lg aspect-square">
