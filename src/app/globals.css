@@ -10,19 +10,19 @@
     --card-foreground: 20 14% 4%;
     --popover: 48 33% 98%;
     --popover-foreground: 20 14% 4%;
-    --primary: 10 80% 70%;
-    --primary-foreground: 20 14% 4%;
-    --secondary: 10 50% 95%;
-    --secondary-foreground: 20 14% 4%;
-    --muted: 10 30% 90%;
+    --primary: 259 95% 84%;
+    --primary-foreground: 260 100% 20%;
+    --secondary: 300 13% 96%;
+    --secondary-foreground: 300 10% 20%;
+    --muted: 300 13% 90%;
     --muted-foreground: 24 8% 45%;
-    --accent: 10 50% 95%;
-    --accent-foreground: 20 14% 4%;
+    --accent: 337 84% 94%;
+    --accent-foreground: 338 90% 30%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 48 33% 88%;
     --input: 48 33% 90%;
-    --ring: 10 80% 70%;
+    --ring: 259 95% 64%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -32,25 +32,25 @@
   }
 
   .dark {
-    --background: 20 14% 4%;
+    --background: 260 20% 10%;
     --foreground: 0 0% 98%;
-    --card: 20 14% 6%;
+    --card: 260 20% 12%;
     --card-foreground: 0 0% 98%;
-    --popover: 20 14% 4%;
+    --popover: 260 20% 8%;
     --popover-foreground: 0 0% 98%;
-    --primary: 10 80% 70%;
-    --primary-foreground: 20 14% 4%;
-    --secondary: 10 30% 15%;
+    --primary: 259 95% 84%;
+    --primary-foreground: 260 100% 20%;
+    --secondary: 260 15% 18%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 10 20% 10%;
+    --muted: 260 10% 25%;
     --muted-foreground: 24 8% 55%;
-    --accent: 10 30% 15%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 337 50% 30%;
+    --accent-foreground: 337 90% 90%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 10 20% 12%;
-    --input: 10 20% 12%;
-    --ring: 10 80% 70%;
+    --border: 260 15% 22%;
+    --input: 260 15% 22%;
+    --ring: 259 95% 84%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
@@ -96,9 +96,10 @@
     }
   }
 
+  /* Say Hello / Download Button */
   .animated-button {
-    @apply text-lg text-white font-sans py-3 px-5 flex items-center justify-center border-none rounded-full shadow-lg transition-all duration-300;
-    background: linear-gradient(to bottom, #4dc7d9 0%, #66a6ff 100%);
+    @apply text-lg text-primary-foreground font-sans py-3 px-5 flex items-center justify-center border-none rounded-full shadow-lg transition-all duration-300;
+    background: linear-gradient(to bottom, hsl(var(--accent)), hsl(var(--primary)));
   }
 
   .animated-button:hover {
@@ -113,18 +114,57 @@
 
   .animated-button .svg-wrapper {
     @apply flex items-center justify-center w-[30px] h-[30px] rounded-full mr-2 transition-all duration-300;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: hsla(var(--primary-foreground), 0.2);
   }
   
   .animated-button:hover .svg-wrapper {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: hsla(var(--primary-foreground), 0.5);
+  }
+  
+  .animated-button .svg-wrapper svg {
+    @apply w-[18px] h-[18px] fill-primary-foreground transition-all duration-300;
   }
 
-  .animated-button:hover .svg-wrapper svg {
+  .animated-button:hover .svg-wrapper svg.send-icon {
     @apply rotate-45;
   }
 
-  .animated-button .svg-wrapper svg {
-    @apply w-[18px] h-[18px] fill-white transition-all duration-300;
+  .animated-button:hover .svg-wrapper svg.download-icon {
+     animation: bounce_613 1s linear;
   }
+
+  @keyframes bounce_613 {
+    40% {
+      transform: translateY(-8px);
+    }
+    60% {
+      transform: translateY(0px);
+    }
+    80% {
+      transform: translateY(-4px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  /* View My Work Button */
+  .button-fill-animation {
+    @apply relative overflow-hidden transition-colors duration-300 ease-out;
+  }
+
+  .button-fill-animation span, .button-fill-animation svg {
+    @apply relative z-10;
+  }
+  
+  .button-fill-animation::before {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 content-[''] rounded-full block w-0 h-0 transition-all duration-500 ease-out;
+    background: hsl(var(--primary-foreground) / 0.15);
+    z-index: 0;
+  }
+  
+  .button-fill-animation:hover::before {
+    @apply w-[20em] h-[20em];
+  }
+
 }
