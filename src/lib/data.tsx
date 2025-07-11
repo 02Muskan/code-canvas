@@ -1,5 +1,14 @@
 import React from 'react';
 
+const HtmlLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"/><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"/><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"/><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"/></svg>
+);
+ const CssLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <img src="/images/icons8-css-48.png" alt="Git Logo" width={48} height={48} />
+ );
+ const JSLogo = (props: React.SVGProps<SVGSVGElement>) => (
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px" baseProfile="basic"><path fill="#f7df1e" d="M6,42V6h36v36H6z"/><path fill="#000001" d="M29.538,32.947c0.692,1.124,1.444,2.201,3.037,2.201c1.338,0,2.04-0.665,2.04-1.585 c0-1.101-0.726-1.492-2.198-2.133l-0.807-0.344c-2.329-0.988-3.878-2.226-3.878-4.841c0-2.41,1.845-4.244,4.728-4.244 c2.053,0,3.528,0.711,4.592,2.573l-2.514,1.607c-0.553-0.988-1.151-1.377-2.078-1.377c-0.946,0-1.545,0.597-1.545,1.377 c0,0.964,0.6,1.354,1.985,1.951l0.807,0.344C36.452,29.645,38,30.839,38,33.523C38,36.415,35.716,38,32.65,38 c-2.999,0-4.702-1.505-5.65-3.368L29.538,32.947z M17.952,33.029c0.506,0.906,1.275,1.603,2.381,1.603 c1.058,0,1.667-0.418,1.667-2.043V22h3.333v11.101c0,3.367-1.953,4.899-4.805,4.899c-2.577,0-4.437-1.746-5.195-3.368 L17.952,33.029z"/></svg>
+ );
 const ReactLogo = (props: React.SVGProps<SVGSVGElement>) => (
   <svg {...props} viewBox="-11.5 -10.23174 23 20.46348" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="0" cy="0" r="2.05" fill="#61DAFB"/>
@@ -12,34 +21,38 @@ const ReactLogo = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const NextJsLogo = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg {...props} width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fillRule="evenodd" clipRule="evenodd" d="M48 0C21.49 0 0 21.49 0 48C0 74.51 21.49 96 48 96C74.51 96 96 74.51 96 48C96 21.49 74.51 0 48 0ZM69.54 75.44L44.27 49.34V75.44H34.11V20.56H44.27V45.74L67.43 20.56H78.47L51.05 47.92L80.59 75.44H69.54Z" fill="black"/>
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#212121" d="M18.974,31.5c0,0.828-0.671,1.5-1.5,1.5s-1.5-0.672-1.5-1.5v-14c0-0.653,0.423-1.231,1.045-1.43 c0.625-0.198,1.302,0.03,1.679,0.563l16.777,23.704C40.617,36.709,44,30.735,44,24c0-11-9-20-20-20S4,13,4,24s9,20,20,20 c3.192,0,6.206-0.777,8.89-2.122L18.974,22.216V31.5z M28.974,16.5c0-0.828,0.671-1.5,1.5-1.5s1.5,0.672,1.5,1.5v13.84l-3-4.227 V16.5z"/></svg>
 );
 
 const TailwindCssLogo = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg {...props} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M9.54516 11.2319C9.54516 10.1557 10.3705 9.33032 11.4467 9.33032C12.5229 9.33032 13.3482 10.1557 13.3482 11.2319C13.3482 12.3081 12.5229 13.1334 11.4467 13.1334C10.3705 13.1334 9.54516 12.3081 9.54516 11.2319Z" fill="#38BDF8"/>
-    <path d="M18.6518 11.2319C18.6518 10.1557 19.4771 9.33032 20.5533 9.33032C21.6295 9.33032 22.4548 10.1557 22.4548 11.2319C22.4548 12.3081 21.6295 13.1334 20.5533 13.1334C19.4771 13.1334 18.6518 12.3081 18.6518 11.2319Z" fill="#38BDF8"/>
-    <path d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0ZM14.2483 22.6697C11.5163 22.6697 9.27415 20.4275 9.27415 17.6956C9.27415 16.0351 10.1337 14.5416 11.4467 13.682C12.7258 14.6734 14.5884 15.3621 16.5492 15.3621C18.4758 15.3621 20.3042 14.7075 21.5833 13.7505C22.8624 14.6099 23.6877 16.0351 23.6877 17.6956C23.7219 20.4275 21.4801 22.6697 18.7481 22.6697C17.7562 22.6697 16.8282 22.4646 16.0028 22.0594C15.1775 22.4646 14.2495 22.6697 14.2483 22.6697Z" fill="#38BDF8"/>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 48 48"
+    width="48px"
+    height="48px"
+    color="#38BDF8"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M24,9.604c-5.589,0-9.347,2.439-11.276,7.318c-0.2,0.505,0.417,0.92,0.816,0.551
+      c2.035-1.882,4.322-2.505,6.86-1.871c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24
+      c5.589,0,9.348-2.44,11.276-7.319c0.2-0.505-0.417-0.92-0.816-0.551c-2.035,1.882-4.322,2.506-6.86,1.872
+      c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604z
+      M12,24c-5.589,0-9.348,2.44-11.276,7.319c-0.2,0.505,0.417,0.92,0.816,0.551
+      c2.035-1.882,4.322-2.506,6.86-1.871c1.825,0.457,3.13,1.781,4.575,3.246
+      c2.353,2.388,5.077,5.152,11.025,5.152c5.589,0,9.348-2.44,11.276-7.319c0.2-0.505-0.417-0.92-0.816-0.551
+      c-2.035,1.882-4.322,2.506-6.86,1.871c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24z"
+    />
   </svg>
 );
 
 const TypeScriptLogo = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg {...props} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0H48V48H0V0Z" fill="#007ACC"/>
-    <path d="M25.332 25.0721V48H48V25.0721H25.332Z" fill="white"/>
-    <path d="M25.332 25.0721H48V48H25.332V25.0721Z" stroke="#007ACC" strokeWidth="0.1"/>
-    <path d="M28.464 30.684H33.3V35.424H35.808V30.684H40.644V28.356H28.464V30.684ZM31.428 42.6H37.836V44.82H28.464V42.492L34.188 36.3H31.644L28.464 39.156V40.236H34.452V38.124L31.428 42.6Z" fill="#007ACC"/>
-    <path d="M11.284 3.42401V22.252H21.556V19.468H14.116V13.564H20.788V10.78H14.116V5.98001H21.628V3.42401H11.284Z" fill="white"/>
-  </svg>
+  <img src="/images/icons8-typescript-48.png" alt="Git Logo" width={48} height={48} />
 );
 
 const GitLogo = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22.8718 10.5977C22.6621 10.378 22.3991 10.2117 22.103 10.1132L13.887 7.11299L10.8872 15.3283C10.7887 15.6244 10.6224 15.8874 10.4027 16.0971L12.5649 18.2592C12.8258 18.0628 13.1378 17.9351 13.4735 17.9011C14.4716 17.7923 15.344 18.5739 15.344 19.5255C15.344 20.4771 14.4716 21.2587 13.4735 21.1499C12.4754 21.041 11.6601 20.1832 11.6601 19.2316C11.6601 18.8959 11.7877 18.5839 11.9842 18.323L9.90291 16.2417C9.64201 16.4382 9.33003 16.5658 9.00194 16.5998L9.00194 9.47452C9.00194 9.14643 8.87428 8.83445 8.65463 8.57355L4.42645 4.34537C4.00454 3.92345 3.32896 3.92345 2.90704 4.34537L1.12822 6.12419C0.706304 6.54611 0.706304 7.22169 1.12822 7.64361L8.35639 14.8718C8.57604 15.0914 8.83902 15.2577 9.13511 15.3562L12.1353 23.5716C12.2338 23.8677 12.3999 24.1305 12.6198 24.3402L12.6196 24.3404C13.0415 24.7623 13.7171 24.7623 14.139 24.3404L22.8718 15.6076C23.2937 15.1857 23.2937 14.5101 22.8718 14.0882L14.0883 5.30472C13.6664 4.8828 12.9908 4.8828 12.5689 5.30472L10.7901 7.08354C10.3681 7.50546 10.3681 8.18104 10.7901 8.60296L17.7408 15.5536C18.1627 15.9755 18.8383 15.9755 19.2602 15.5536L22.8718 11.942C23.0815 11.7323 23.1995 11.4582 23.1923 11.1738C23.1852 10.8893 23.0536 10.6225 22.8441 10.4258L22.8718 10.5977Z" fill="#F05033"/>
-    <path d="M9.00194 16.5998C8.00385 16.7086 7.18856 15.8508 7.18856 14.9C7.18856 13.9484 8.00385 13.0905 9.00194 13.1994C10.0001 13.3082 10.8153 14.166 10.8153 15.1176C10.8153 16.0692 10.0001 16.8508 9.00194 16.5998Z" fill="#F05033"/>
-  </svg>
+  <img src="/images/icons8-git-logo-50.png" alt="Git Logo" width={48} height={48} />
 );
 
 const VercelLogo = (props: React.SVGProps<SVGSVGElement>) => (
@@ -47,9 +60,7 @@ const VercelLogo = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const NodeJsLogo = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M11.773 13.142l-2.022-1.167L5.006 14.84V9.16l4.745-2.74L14.496 9.16v5.68l-2.723-1.698zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm7.902 14.938l-2.47-1.426v-2.85l2.47-1.425 2.47 1.425v2.85l-2.47 1.426zm-3.805-2.196l-2.099-1.211-2.099 1.211V13.53l2.099 1.211 2.099-1.211v1.212zm-8.195 0l-2.47-1.426v-2.85l2.47-1.425 2.47 1.425v2.85l-2.47 1.426z" fill="#339933"/>
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px" baseProfile="basic"><path fill="#21a366" d="M24.007,45.419c-0.574,0-1.143-0.15-1.646-0.44l-5.24-3.103c-0.783-0.438-0.401-0.593-0.143-0.682	c1.044-0.365,1.255-0.448,2.369-1.081c0.117-0.067,0.27-0.043,0.39,0.028l4.026,2.389c0.145,0.079,0.352,0.079,0.486,0l15.697-9.061	c0.145-0.083,0.24-0.251,0.24-0.424V14.932c0-0.181-0.094-0.342-0.243-0.432L24.253,5.446c-0.145-0.086-0.338-0.086-0.483,0	L8.082,14.499c-0.152,0.086-0.249,0.255-0.249,0.428v18.114c0,0.173,0.094,0.338,0.244,0.42l4.299,2.483	c2.334,1.167,3.76-0.208,3.76-1.591V16.476c0-0.255,0.2-0.452,0.456-0.452h1.988c0.248,0,0.452,0.196,0.452,0.452v17.886	c0,3.112-1.697,4.9-4.648,4.9c-0.908,0-1.623,0-3.619-0.982l-4.118-2.373C5.629,35.317,5,34.216,5,33.042V14.928	c0-1.179,0.629-2.279,1.646-2.861L22.36,3.002c0.994-0.562,2.314-0.562,3.301,0l15.694,9.069C42.367,12.656,43,13.753,43,14.932	v18.114c0,1.175-0.633,2.271-1.646,2.861L25.66,44.971c-0.503,0.291-1.073,0.44-1.654,0.44"/><path fill="#21a366" d="M28.856,32.937c-6.868,0-8.308-3.153-8.308-5.797c0-0.251,0.203-0.452,0.455-0.452h2.028	c0.224,0,0.413,0.163,0.448,0.384c0.306,2.066,1.218,3.108,5.371,3.108c3.308,0,4.715-0.747,4.715-2.502	c0-1.01-0.401-1.76-5.54-2.263c-4.299-0.424-6.955-1.371-6.955-4.809c0-3.167,2.672-5.053,7.147-5.053	c5.026,0,7.517,1.745,7.831,5.493c0.012,0.13-0.035,0.255-0.122,0.35c-0.086,0.09-0.208,0.145-0.334,0.145h-2.039	c-0.212,0-0.397-0.149-0.44-0.354c-0.491-2.173-1.678-2.868-4.904-2.868c-3.611,0-4.031,1.257-4.031,2.2	c0,1.143,0.495,1.477,5.367,2.122c4.825,0.64,7.116,1.544,7.116,4.935c0,3.418-2.853,5.379-7.827,5.379"/></svg>
 );
 
 const ZustandLogo = (props: React.SVGProps<SVGSVGElement>) => (
@@ -61,6 +72,9 @@ const ZustandLogo = (props: React.SVGProps<SVGSVGElement>) => (
 
 
 export const developmentSkills = [
+  { name: "Html", logo:HtmlLogo },
+  { name: "CSS", logo:CssLogo },
+  { name: "Javascript", logo: JSLogo },
   { name: "React", logo: ReactLogo },
   { name: "Next.js", logo: NextJsLogo },
   { name: "TypeScript", logo: TypeScriptLogo },
@@ -74,78 +88,77 @@ export const deploymentSkills = [
   { name: "Git", logo: GitLogo },
 ];
 
-// A list of your projects
 export const projects = [
   {
     title: "SkeletonSymphony",
     description: "An interactive playground to design and preview custom skeleton loaders with a real-time drag-and-drop interface.",
     tags: ["Next.js", "React.js", "Tailwind CSS", "Node.js"],
-    image: "/SkeletonSymphony.png",
+    image: "/images/skelton.png",
     aiHint: "web component",
     github: "https://github.com/02Muskan",
-    live: "https://example.com",
+    live: "skeleton-symphony.vercel.app",
   },
   {
     title: "CodeSync",
     description: "A real-time code collaboration platform featuring shared editing, syntax highlighting, and live updates.",
     tags: ["React.js", "Socket.io", "Express.js", "Docker"],
-    image: "/CodeSync.png",
+    image: "/images/code.png",
     aiHint: "code editor",
     github: "https://github.com/02Muskan",
-    live: "https://example.com",
+    live: "https://code-sync-eight-tau.vercel.app/",
   },
   {
     title: "LearnEd",
     description: "A user-friendly e-learning platform providing digital access to a wide range of courses and educational resources.",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "/LearnEd.png",
+    image: "/images/learned.png",
     aiHint: "online learning",
     github: "https://github.com/02Muskan",
-    live: "https://example.com",
+    live: "02muskan.github.io/LearnEd/",
   },
   {
     title: "Quick Laugh Chrome Extension",
     description: "A lightweight Chrome extension that generates a new joke with every click, using NLP and external APIs.",
     tags: ["JavaScript", "Chrome API", "NLP"],
-    image: "/QuickLaugh.png",
+    image: "/images/extension.png",
     aiHint: "browser extension",
     github: "https://github.com/02Muskan",
-    live: "https://example.com",
+   
   },
   {
     title: "Desi Dials",
     description: "A clean and modern e-commerce frontend for a watch store, built with a focus on user experience.",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "/DesiDials.png",
+    image: "/images/watchit.png",
     aiHint: "watch store",
     github: "https://github.com/02Muskan",
-    live: "https://example.com",
+    live: "02muskan.github.io/WatchIT/",
   },
   {
     title: "Check List",
     description: "A dynamic and intuitive task management application for organizing daily to-do items and tracking progress.",
     tags: ["React.js", "JavaScript"],
-    image: "/CheckList.png",
+    image: "/images/todo.png",
     aiHint: "to-do list",
     github: "https://github.com/02Muskan",
-    live: "https://example.com",
+    live: "react-worklist.vercel.app/",
   },
   {
     title: "Travel Vibes",
     description: "An engaging and responsive travel agency landing page built to showcase beautiful destinations.",
     tags: ["HTML", "CSS", "Bootstrap"],
-    image: "/TravelVibes.png",
+    image: "/images/kerala.png",
     aiHint: "travel website",
     github: "https://github.com/02Muskan",
-    live: "https://example.com",
+    live: "https://02muskan.github.io/Travel-Vibes--Landing-Page/",
   },
   {
     title: "Password Generator Tool",
     description: "A secure and easy-to-use tool for creating strong, random passwords with customizable options.",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "/PasswordGenerator.png",
+    image: "/images/password.png",
     aiHint: "security tool",
     github: "https://github.com/02Muskan",
-    live: "https://example.com",
+    live: "https://02muskan.github.io/Password-Generator/",
   },
 ]

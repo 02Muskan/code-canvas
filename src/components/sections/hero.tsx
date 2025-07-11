@@ -19,20 +19,20 @@ export default function Hero() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
                 <span>View My Work</span>
               </a>
-              <AnimatedButton href="/Muskan_Agarwal_Resume.pdf" iconType="download" target="_blank" rel="noopener noreferrer">
+              <AnimatedButton href="/Muskan Agarwal CV.pdf" iconType="download"  rel="noopener noreferrer">
                   Download Resume
               </AnimatedButton>
             </div>
         </div>
         <div className="relative w-full max-w-sm mx-auto md:max-w-md lg:max-w-lg aspect-square">
             <Image
-                src="https://placehold.co/800x800.png"
+                src="/images/avatar girl.png"
                 alt="Illustrative avatar of Muskan Agarwal"
                 fill
                 className="object-contain rounded-full"
                 data-ai-hint="illustrative developer avatar"
             />
-            <div className="absolute right-0 bottom-1/4 flex flex-col items-center gap-4 z-20">
+            <div className="absolute right-[-2rem] md:right-[-3rem] bottom-1/4 flex flex-col items-center gap-4 z-20">
               <a href="https://github.com/02Muskan" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-background/50 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground transition-all duration-300 transform hover:scale-110">
                 <Github className="h-6 w-6" />
               </a>
