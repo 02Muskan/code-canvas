@@ -1,6 +1,6 @@
 import Image from "next/image"
 import AnimatedButton from "../animated-button"
-import { Button } from "../ui/button"
+import { Eye } from "lucide-react"
 
 export default function Hero() {
   return (
@@ -15,14 +15,13 @@ export default function Hero() {
             A passionate Frontend Developer crafting beautiful and functional web experiences. Welcome to my creative canvas.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <Button asChild size="lg" className="text-lg">
-                <a href="#projects">
-                    View My Work
-                </a>
-            </Button>
-            <AnimatedButton href="/resume.pdf" iconType="download" download>
-                Download Resume
-            </AnimatedButton>
+              <a href="#projects" className="fill-button">
+                <Eye />
+                <span>View My Work</span>
+              </a>
+              <AnimatedButton href="/resume.pdf" iconType="download" download>
+                  Download Resume
+              </AnimatedButton>
             </div>
         </div>
         <div className="relative w-full max-w-sm mx-auto md:max-w-md lg:max-w-lg aspect-square">
