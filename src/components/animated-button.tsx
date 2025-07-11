@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { Download } from 'lucide-react';
+import { Eye } from 'lucide-react';
 
 const SendIcon = () => (
     <svg className="send-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24}>
@@ -18,17 +18,27 @@ const DownloadIcon = () => (
     </svg>
 )
 
+const EyeIcon = () => (
+    <Eye className="eye-icon" />
+)
+
+
 interface AnimatedButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   asChild?: boolean;
   children: React.ReactNode;
-  iconType: 'send' | 'download';
+  iconType: 'send' | 'download' | 'eye';
   href?: string;
 }
 
 const AnimatedButton = React.forwardRef<HTMLButtonElement, AnimatedButtonProps>(
   ({ children, iconType, href, className, ...props }, ref) => {
     
-    const icon = iconType === 'send' ? <SendIcon /> : <DownloadIcon />;
+    const iconMap = {
+        send: <SendIcon />,
+        download: <DownloadIcon />,
+        eye: <EyeIcon />
+    }
+    const icon = iconMap[iconType];
     
     const content = (
       <>

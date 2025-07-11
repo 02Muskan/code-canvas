@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { Eye } from "lucide-react"
 import Image from "next/image"
 import AnimatedButton from "../animated-button"
@@ -16,12 +15,9 @@ export default function Hero() {
             A passionate Frontend Developer crafting beautiful and functional web experiences. Welcome to my creative canvas.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <Button size="lg" asChild className="button-fill-animation">
-                <a href="#projects">
-                    <Eye className="mr-2 h-5 w-5" />
-                    <span>View My Work</span>
-                </a>
-            </Button>
+            <AnimatedButton href="#projects" iconType="eye">
+                View My Work
+            </AnimatedButton>
             <AnimatedButton href="/resume.pdf" iconType="download" download>
                 Download Resume
             </AnimatedButton>

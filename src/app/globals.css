@@ -98,7 +98,7 @@
 
   /* Say Hello / Download Button */
   .animated-button {
-    @apply text-lg text-primary-foreground font-sans py-3 px-5 flex items-center justify-center border-none rounded-full shadow-lg transition-all duration-300;
+    @apply text-lg text-primary-foreground font-sans py-2 px-4 flex items-center justify-center border-none rounded-full shadow-lg transition-all duration-300;
     background: linear-gradient(to bottom, hsl(var(--accent)), hsl(var(--primary)));
   }
 
@@ -148,23 +148,15 @@
     }
   }
 
-  /* View My Work Button */
-  .button-fill-animation {
-    @apply relative overflow-hidden transition-colors duration-300 ease-out;
+  .animated-button:hover .svg-wrapper svg.eye-icon {
+    animation: eye_glance 1.5s infinite;
   }
 
-  .button-fill-animation span, .button-fill-animation svg {
-    @apply relative z-10;
-  }
-  
-  .button-fill-animation::before {
-    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 content-[''] rounded-full block w-0 h-0 transition-all duration-500 ease-out;
-    background: hsl(var(--primary-foreground) / 0.15);
-    z-index: 0;
-  }
-  
-  .button-fill-animation:hover::before {
-    @apply w-[20em] h-[20em];
+  @keyframes eye_glance {
+    0%, 100% { transform: translateX(0) scaleX(1); }
+    10%, 20% { transform: translateX(-5px) scaleX(0.9); }
+    30%, 40% { transform: translateX(5px) scaleX(0.9); }
+    50% { transform: translateX(0) scaleX(1); }
   }
 
 }
