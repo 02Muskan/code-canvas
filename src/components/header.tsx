@@ -69,13 +69,11 @@ export default function Header() {
                   <span className="sr-only">Toggle navigation menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="pr-0">
-                <SheetHeader>
+              <SheetContent side="right">
+                <SheetHeader className="flex-row items-center justify-between">
                   <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+                  <ThemeToggle onClick={closeSheet} />
                 </SheetHeader>
-                <div className="absolute top-4 right-14">
-                  <ThemeToggle />
-                </div>
                 <div className="grid gap-4 py-6 mt-8">
                   <Link href="/" className="flex items-center gap-2 font-headline text-2xl font-bold" onClick={closeSheet}>
                     <span>CodeCanvas</span>
