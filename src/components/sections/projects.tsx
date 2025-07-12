@@ -35,8 +35,8 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
             data-ai-hint={project.aiHint}
           />
           <div className="absolute inset-0 rounded-lg flex flex-col justify-end p-6">
-            <h3 className="font-headline text-2xl font-bold dark:text-primary-foreground text-primary">{project.title}</h3>
-            <p className="dark:text-white/90 text-primary font-semibold flex items-center gap-2 mt-2">
+            <h3 className="font-headline text-2xl font-bold dark:text-black text-purple-600">{project.title}</h3>
+            <p className="dark:text-black text-purple-600 font-semibold flex items-center gap-2 mt-2">
               View Details <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </p>
           </div>
@@ -45,7 +45,7 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
         {/* Back Side */}
         <div className="absolute inset-0 h-full w-full rounded-lg bg-secondary text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
           <div className="flex h-full flex-col items-center justify-center p-6 space-y-4">
-              <h3 className="font-headline text-2xl font-bold text-foreground">{project.title}</h3>
+              <h3 className="font-headline text-2xl font-bold text-purple-600">{project.title}</h3>
               <p className="text-muted-foreground text-sm">{project.description}</p>
               <div className="flex flex-wrap gap-2 justify-center">
                 {project.tags.map((tag) => (
