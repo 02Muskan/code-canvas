@@ -5,13 +5,13 @@ import Link from "next/link"
 import { Menu } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { ThemeToggle } from "./theme-toggle"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
   { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
+  { href: "#projects", label: "Creations Vista" },
   { href: "#contact", label: "Contact" },
 ]
 
@@ -67,6 +67,9 @@ export default function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
+                <SheetHeader>
+                  <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+                </SheetHeader>
                 <div className="grid gap-4 py-6">
                   <Link href="/" className="flex items-center gap-2 font-headline text-2xl font-bold">
                     <span>CodeCanvas</span>
