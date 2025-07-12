@@ -11,12 +11,13 @@ import { cn } from "@/lib/utils"
 
 const navLinks = [
   { href: "#about", label: "About" },
-  { href: "#projects", label: "Creations Vista" },
+  { href: "#projects", label: "Featured Work" },
   { href: "#contact", label: "Contact" },
 ]
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,7 +60,7 @@ export default function Header() {
           </div>
 
           <div className="md:hidden">
-            <Sheet>
+            <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
                   <Menu className="h-6 w-6" />
@@ -71,11 +72,16 @@ export default function Header() {
                   <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                 </SheetHeader>
                 <div className="grid gap-4 py-6">
-                  <Link href="/" className="flex items-center gap-2 font-headline text-2xl font-bold">
+                  <Link href="/" className="flex items-center gap-2 font-headline text-2xl font-bold" onClick={() => setIsSheetOpen(false)}>
                     <span>CodeCanvas</span>
                   </Link>
                    {navLinks.map((link) => (
-                    <Link key={link.href} href={link.href} className="text-lg font-medium text-foreground/80 transition-colors hover:text-foreground">
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="text-lg font-medium text-foreground/80 transition-colors hover:text-foreground"
+                      onClick={() => setIsSheetOpen(false)}
+                    >
                       {link.label}
                     </Link>
                   ))}
