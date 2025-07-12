@@ -27,6 +27,8 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const closeSheet = () => setIsSheetOpen(false);
+
   return (
     <header className={cn(
       "sticky top-0 z-50 w-full transition-all duration-300",
@@ -67,12 +69,15 @@ export default function Header() {
                   <span className="sr-only">Toggle navigation menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right">
+              <SheetContent side="right" className="pr-0">
                 <SheetHeader>
                   <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                 </SheetHeader>
-                <div className="grid gap-4 py-6">
-                  <Link href="/" className="flex items-center gap-2 font-headline text-2xl font-bold" onClick={() => setIsSheetOpen(false)}>
+                <div className="absolute top-4 right-14">
+                  <ThemeToggle />
+                </div>
+                <div className="grid gap-4 py-6 mt-8">
+                  <Link href="/" className="flex items-center gap-2 font-headline text-2xl font-bold" onClick={closeSheet}>
                     <span>CodeCanvas</span>
                   </Link>
                    {navLinks.map((link) => (
@@ -80,14 +85,11 @@ export default function Header() {
                       key={link.href}
                       href={link.href}
                       className="text-lg font-medium text-foreground/80 transition-colors hover:text-foreground"
-                      onClick={() => setIsSheetOpen(false)}
+                      onClick={closeSheet}
                     >
                       {link.label}
                     </Link>
                   ))}
-                  <div className="flex items-center gap-2 pt-4 border-t">
-                    <ThemeToggle />
-                  </div>
                 </div>
               </SheetContent>
             </Sheet>
