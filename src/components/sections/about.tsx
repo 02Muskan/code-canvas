@@ -7,16 +7,16 @@ export default function About() {
       <div className="grid gap-12">
         <div className="space-y-8">
           <h2 className="font-headline text-4xl font-bold text-center">About Me</h2>
-          <div className="space-y-4 text-lg text-foreground/80 max-w-3xl mx-auto text-center">
+          <div className="space-y-4 text-lg text-foreground/80 max-w-3xl mx-auto text-left">
             <p>
-              🚀 Frontend Developer with 2+ years of building fast ⚡, clean 🧼, and beautiful 🎨 web apps using React, Next.js, and Tailwind CSS. I turn 🎯 Figma designs into pixel-perfect UIs and love crafting components that are both reusable ♻️ and delightful ✨.
+              Frontend Developer with 2+ years of building fast, clean, and beautiful web apps using React, Next.js, and Tailwind CSS. I turn Figma designs into pixel-perfect UIs and love crafting components that are both reusable and delightful.
             </p>
             <p>
-              🏢 Currently at Miles Education, shaping a powerful CRM from the ground up — building dynamic UIs 💻, integrating real-time APIs 🔄, and making dashboards 📊 that actually work (and look great doing it 😎).
+              Currently at Miles Education, shaping a powerful CRM from the ground up — building dynamic UIs, integrating real-time APIs, and making dashboards that actually work (and look great doing it).
             </p>
             <p>
-              🧰 Stack: React ⚛️, Next.js 🚦, TypeScript 🟦, Tailwind 💅, Zustand 🧠, Node.js 🌐 <br/>
-              ⚡️ Superpowers: Clean code ✍️, snappy UI 🎯, smooth API integration 🔌, and design that just feels right 🎯
+              <strong>Stack:</strong> React, Next.js, TypeScript, Tailwind, Zustand, Node.js <br/>
+              <strong>Superpowers:</strong> Clean code, snappy UI, smooth API integration, and design that just feels right.
             </p>
           </div>
         </div>

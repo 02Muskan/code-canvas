@@ -38,14 +38,14 @@
     --card-foreground: 0 0% 98%;
     --popover: 260 20% 8%;
     --popover-foreground: 0 0% 98%;
-    --primary: 259 95% 84%;
-    --primary-foreground: 260 100% 20%;
+    --primary: 259 80% 60%;
+    --primary-foreground: 0 0% 98%;
     --secondary: 260 15% 18%;
     --secondary-foreground: 0 0% 98%;
     --muted: 260 10% 25%;
     --muted-foreground: 24 8% 55%;
     --accent: 259 80% 40%;
-    --accent-foreground: 259 90% 90%;
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 260 15% 22%;
@@ -157,10 +157,13 @@
     @apply bg-transparent relative py-2 px-4 flex items-center justify-center text-lg;
     @apply font-semibold no-underline cursor-pointer rounded-full outline-none overflow-hidden;
     @apply border border-primary text-primary transition-colors duration-300 ease-out;
-    @apply text-black; 
     -webkit-transition: color 0.3s 0.1s ease-out;
     transition: color 0.3s 0.1s ease-out;
     text-align: center;
+  }
+  
+  .dark .fill-button {
+    @apply text-primary;
   }
 
   .fill-button span {
@@ -183,6 +186,10 @@
 
   .fill-button:hover {
     @apply text-primary-foreground;
+  }
+  
+  .dark .fill-button:hover {
+    @apply text-white;
   }
 
   .fill-button:hover::before {
