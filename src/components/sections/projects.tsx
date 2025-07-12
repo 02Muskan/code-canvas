@@ -34,9 +34,9 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
             className="object-cover rounded-lg"
             data-ai-hint={project.aiHint}
           />
-          <div className="absolute inset-0 rounded-lg flex flex-col justify-end p-6">
-            <h3 className="font-headline text-2xl font-bold text-white">{project.title}</h3>
-            <p className="text-white/80 flex items-center gap-2 mt-2">
+          <div className="absolute inset-0 rounded-lg flex flex-col justify-end p-6 ">
+            <h3 className="font-headline text-2xl font-bold dark:text-[#cbbaed] text-purple-600 ">{project.title}</h3>
+            <p className="dark:text-white/80 text-purple-700 font-semibold flex items-center gap-2 mt-2">
               View Details <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </p>
           </div>
@@ -80,7 +80,7 @@ export default function Projects() {
     <section id="projects" className="bg-secondary">
       <div className="container mx-auto py-16 md:py-24 px-4 md:px-6">
         <div className="text-center">
-          <h2 className="font-headline text-4xl font-bold">Creations Vista</h2>
+          <h2 className="font-headline text-4xl font-bold">Featured Work</h2>
           <p className="mt-2 text-lg text-muted-foreground">
             A selection of my frontend work. Click or hover on a card to see details.
           </p>

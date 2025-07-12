@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section id="contact" className="container mx-auto py-16 md:py-24 px-4 md:px-6">
       <div className="text-center">
-        <h2 className="font-headline text-4xl font-bold">Get In Touch</h2>
+        <h2 className="font-headline text-4xl font-bold">Let's Connect</h2>
         <p className="mt-4 max-w-xl mx-auto text-lg text-muted-foreground">
           I'm currently open to new opportunities. Feel free to reach out if you have a project in mind or just want to connect!
         </p>
